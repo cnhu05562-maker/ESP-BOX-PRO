@@ -21,7 +21,8 @@ jobs:
           gradle-version: '8.9'
 
       - uses: android-actions/setup-android@v3
-
+       with:
+         accept-android-sdk-licenses: true
       - name: Extract project
         run: |
           unzip ESP_BOX_PRO_Demo_Android.zip -d project
